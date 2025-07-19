@@ -19,7 +19,7 @@ export class ApiClient {
 
     private async getHeaders(
         customHeaders?: Record<string, string>,
-        requireAuth: boolean = true
+        requireAuth: boolean = false
     ) {
         const headers: Record<string, string> = {
             ...DEFAULT_HEADERS,
